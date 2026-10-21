@@ -1,0 +1,6 @@
+{
+  "name": "JADORESHREY WELLNESS",
+  "description": "A premium women's wellness publication dedicated to evidence-informed skincare, women's health in India, protein nutrition, Ayurveda, and physical vitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
