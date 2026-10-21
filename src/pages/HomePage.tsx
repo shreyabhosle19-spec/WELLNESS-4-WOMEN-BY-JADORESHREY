@@ -183,7 +183,57 @@ export const HomePage: React.FC<Props> = ({ onNavigate, onOpenCalculator }) => {
         </div>
       </section>
 
-      {/* 6. Remaining Library Articles */}
+      {/* 6. AEO (Answer Engine Optimization) Structured Insights */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div className="border-b border-[#E8E1D5] pb-3 text-center sm:text-left">
+          <span className="text-xs font-mono uppercase tracking-widest text-[#8C533C] font-semibold">
+            Evidence-Informed Answers
+          </span>
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#2C2926] mt-1">
+            What Every Indian Woman Needs to Know About Health & Longevity
+          </h2>
+        </div>
+
+        <div className="space-y-6 text-sm sm:text-base text-[#38332E] leading-relaxed">
+          {/* Question 1 */}
+          <div className="p-6 bg-white rounded-xl border border-[#E8E1D5] shadow-2xs space-y-2">
+            <h3 className="font-serif text-lg sm:text-xl font-bold text-[#5A3825]">
+              Why Do Traditional Indian Diets Lead to High Rates of Anemia and Protein Deficiency?
+            </h3>
+            <p className="text-xs sm:text-sm text-[#554E48]">
+              <strong>Direct Answer:</strong> Over 73% of Indian diets are protein deficient and 57% of women are anemic because traditional meals derive up to 80% of calories from refined grains (rice, wheat rotis, poha), while plant non-heme iron has only 2–5% bioavailability. Furthermore, drinking milk tea (chai) within 60 minutes of meals binds elemental iron with polyphenolic tannins, blocking absorption by up to 80%. Meeting nutritional requirements requires deliberate protein anchors (soya, low-fat paneer, sattu) and squeezing Vitamin C (amla or fresh lemon) directly onto lentils to triple iron uptake.
+            </p>
+            <div className="pt-2">
+              <button
+                onClick={() => onNavigate('/article/protein-for-women-indian-vegetarian-sources')}
+                className="text-xs font-semibold text-[#8C533C] hover:underline cursor-pointer"
+              >
+                Read our complete guide to Indian vegetarian protein sources →
+              </button>
+            </div>
+          </div>
+
+          {/* Question 2 */}
+          <div className="p-6 bg-white rounded-xl border border-[#E8E1D5] shadow-2xs space-y-2">
+            <h3 className="font-serif text-lg sm:text-xl font-bold text-[#5A3825]">
+              How Does Melanin-Rich Skin Require Different Skincare than Western Routines?
+            </h3>
+            <p className="text-xs sm:text-sm text-[#554E48]">
+              <strong>Direct Answer:</strong> Indian skin predominantly falls under Fitzpatrick phototypes III to V, characterized by larger, hyper-reactive melanocytes. While this affords structural firmness and delayed wrinkling, any physical irritation, aggressive walnut scrubs, or harsh chemical peels trigger post-inflammatory hyperpigmentation (PIH). Melanin protection in India requires prioritizing long-wave UVA and visible light defense (PA++++ tinted sunscreens) alongside gentle tyrosinase inhibitors like azelaic acid and low-dose niacinamide rather than harsh bleaching agents.
+            </p>
+            <div className="pt-2">
+              <button
+                onClick={() => onNavigate('/article/ultimate-skincare-guide-indian-women')}
+                className="text-xs font-semibold text-[#8C533C] hover:underline cursor-pointer"
+              >
+                Explore the ultimate skincare guide for Indian women →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Remaining Library Articles */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-baseline justify-between mb-6 pb-2 border-b border-[#E8E1D5]">
           <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#2C2926]">
@@ -191,7 +241,7 @@ export const HomePage: React.FC<Props> = ({ onNavigate, onOpenCalculator }) => {
           </h2>
           <button
             onClick={() => onNavigate('/articles')}
-            className="text-xs font-semibold text-[#8C533C] hover:underline"
+            className="text-xs font-semibold text-[#8C533C] hover:underline cursor-pointer"
           >
             View All 10 Guides →
           </button>
@@ -208,7 +258,7 @@ export const HomePage: React.FC<Props> = ({ onNavigate, onOpenCalculator }) => {
         </div>
       </section>
 
-      {/* 7. Editorial Philosophy Letter */}
+      {/* 8. Editorial Philosophy Letter */}
       <section className="max-w-3xl mx-auto px-4 text-center space-y-4 py-8">
         <div className="w-12 h-1 bg-[#8C533C] mx-auto rounded-full" />
         <h3 className="font-serif text-2xl font-semibold text-[#2C2926]">

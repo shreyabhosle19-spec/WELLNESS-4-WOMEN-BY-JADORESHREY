@@ -51,6 +51,8 @@ export const ArticleCard: React.FC<Props> = ({ article, onSelect, variant = 'sta
               src={article.heroImage}
               alt={article.heroImageAlt}
               referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
               onError={() => setImgError(true)}
               className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
             />
@@ -106,6 +108,8 @@ export const ArticleCard: React.FC<Props> = ({ article, onSelect, variant = 'sta
             src={article.heroImage}
             alt={article.heroImageAlt}
             referrerPolicy="no-referrer"
+            loading="lazy"
+            decoding="async"
             onError={() => setImgError(true)}
             className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
           />

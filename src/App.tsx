@@ -43,31 +43,88 @@ export default function App() {
     }
   };
 
-  // Dynamic document title update based on active page
+  // Dynamic document title and meta description updates based on active page
   useEffect(() => {
+    let title = "Evidence-Informed Women's Wellness | JADORESHREY";
+    let description = "Evidence-informed wellness publication for Indian women covering melanin skincare, vegetarian protein, PCOS, Ayurveda, and strength. Read our guides.";
+
     if (currentRoute === '/' || currentRoute === '') {
-      document.title = "JADORESHREY WELLNESS — Evidence-Informed Skincare, Health & Nutrition";
+      title = "Evidence-Informed Women's Wellness | JADORESHREY";
+      description = "Evidence-informed wellness publication for Indian women covering melanin skincare, vegetarian protein, PCOS, Ayurveda, and strength. Read our guides.";
     } else if (currentRoute.startsWith('/article/')) {
       const slug = currentRoute.replace('/article/', '');
       const art = getArticleBySlug(slug);
       if (art) {
-        document.title = `${art.title} — JADORESHREY WELLNESS`;
+        title = art.seoTitle;
+        description = art.metaDescription;
       }
     } else if (currentRoute.startsWith('/category/')) {
       const cat = currentRoute.replace('/category/', '');
-      const formatted = cat.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      document.title = `${formatted} Archives — JADORESHREY WELLNESS`;
+      const categoryTitles: Record<string, { title: string; desc: string }> = {
+        'skincare': {
+          title: "Clinical Skincare for Indian Skin | JADORESHREY",
+          desc: "Evidence-informed skincare for Fitzpatrick skin types III–V. Protect your barrier against tropical humidity, acne marks, and UVA with PA++++ sunscreens."
+        },
+        'womens-health': {
+          title: "Women's Health in India & Hormones | JADORESHREY",
+          desc: "Clinical guides on PCOS diagnosis, thyroid health, cervical screening, and pelvic floor recovery tailored to the Indian medical context. Learn more."
+        },
+        'nutrition': {
+          title: "Protein & Nutrition for Women | JADORESHREY",
+          desc: "Master high-protein Indian vegetarian nutrition, calculate ICMR targets, and reverse widespread iron deficiency with clinical food combinations."
+        },
+        'ayurveda': {
+          title: "Evidence-Based Ayurveda for Women | JADORESHREY",
+          desc: "Classical Ayurvedic phytomedicine examined through modern clinical science. Discover Shatavari, Amla, and Ashwagandha with heavy-metal testing."
+        },
+        'fitness': {
+          title: "Female Biomechanics & Strength | JADORESHREY",
+          desc: "Empowering women with progressive strength training, reformer Pilates, and yoga for bone mineral density and lifelong metabolic vitality."
+        },
+        'daily-wellness': {
+          title: "Circadian Sleep & Daily Habits | JADORESHREY",
+          desc: "Science-backed daily wellness protocols, circadian light hygiene, and stress down-regulation routines to restore female endocrine balance."
+        }
+      };
+
+      if (categoryTitles[cat]) {
+        title = categoryTitles[cat].title;
+        description = categoryTitles[cat].desc;
+      }
     } else if (currentRoute === '/articles') {
-      document.title = "All Articles & Clinical Guides — JADORESHREY WELLNESS";
+      title = "All Articles & Clinical Guides | JADORESHREY";
+      description = "Explore all 10 evidence-informed women's wellness guides spanning melanin dermatology, ICMR protein nutrition, PCOS, and strength training.";
     } else if (currentRoute === '/about') {
-      document.title = "About Our Editorial Standards — JADORESHREY WELLNESS";
+      title = "About Our Editorial Standards | JADORESHREY";
+      description = "Learn about the mission, editorial independence, and medical review board behind JADORESHREY WELLNESS. Read our founding story.";
     } else if (currentRoute === '/contact') {
-      document.title = "Contact Editorial Desk — JADORESHREY WELLNESS";
+      title = "Contact Editorial Desk | JADORESHREY";
+      description = "Submit letters to the editor, suggest clinical topics, or send scientific citation inquiries directly to our medical fact-checking team.";
     } else if (currentRoute === '/medical-disclaimer') {
-      document.title = "Medical & Scientific Disclaimer — JADORESHREY WELLNESS";
+      title = "Medical & Clinical Disclaimer | JADORESHREY";
+      description = "Important medical disclaimer regarding educational content, physician consultations, and clinical standards on JADORESHREY WELLNESS.";
     } else if (currentRoute === '/privacy') {
-      document.title = "Privacy Policy (DPDPA 2023) — JADORESHREY WELLNESS";
+      title = "Privacy Policy & Data Rights | JADORESHREY";
+      description = "Transparent data protection policy compliant with India's Digital Personal Data Protection Act (DPDPA 2023). Review your rights.";
     }
+
+    // Set document title
+    document.title = title;
+
+    // Update meta description
+    let metaDescEl = document.querySelector('meta[name="description"]');
+    if (!metaDescEl) {
+      metaDescEl = document.createElement('meta');
+      metaDescEl.setAttribute('name', 'description');
+      document.head.appendChild(metaDescEl);
+    }
+    metaDescEl.setAttribute('content', description);
+
+    // Update og:title and og:description
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', title);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', description);
   }, [currentRoute]);
 
   // Routing renderer

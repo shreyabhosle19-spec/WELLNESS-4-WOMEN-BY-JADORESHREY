@@ -5,11 +5,15 @@ export const ARTICLES: Article[] = [
   {
     slug: 'ultimate-skincare-guide-indian-women',
     title: "The Ultimate Skincare Guide for Indian Women: Science, Barrier Care & Tropical Resilience",
-    subtitle: "Understanding melanin-rich skin, high humidity, and the non-negotiables of barrier health beyond marketing trends.",
+    seoTitle: "Skincare Guide for Indian Women | JADORESHREY",
+    metaDescription: "Evidence-based skincare guide for Indian women. Learn how to protect Fitzpatrick skin types III–V, repair barrier lipids, and choose PA++++ sunscreens.",
+    mainKeyword: "skincare for Indian women",
+    relatedKeywords: ["melanin barrier repair", "PA++++ sunscreen Indian skin"],
+    subtitle: "Understanding melanin-rich skin, tropical humidity, and the non-negotiables of barrier health beyond marketing trends.",
     category: 'skincare',
     categoryName: 'Skincare',
-    heroImage: '/src/assets/images/jshrey_skincare_hero_1792565396405.jpg',
-    heroImageAlt: 'Editorial illustration of an Indian woman performing a mindful, barrier-repair skincare ritual',
+    heroImage: '/images/skincare-guide-indian-women.jpg',
+    heroImageAlt: 'Editorial illustration of an Indian woman performing a mindful, barrier-repair skincare ritual with gentle botanicals',
     heroCaption: 'Melanin-rich Fitzpatrick skin types III–V require barrier preservation and gentle active layering rather than aggressive stripping.',
     author: {
       name: 'Shreya Bhosale',
@@ -18,15 +22,15 @@ export const ARTICLES: Article[] = [
     },
     publishedDate: 'March 14, 2026',
     readTime: '9 min read',
-    wordCount: 1120,
+    wordCount: 1140,
     excerpt: 'Indian skin possesses unique structural strengths and vulnerabilities. Here is how to navigate tropical humidity, high pigment reactivity, and gentle barrier restoration without aggressive damage.',
     hasMedicalDisclaimer: true,
     medicalReviewedBy: 'Dr. Radhika Sen, MD (Dermatology, Venereology & Leprosy)',
     featured: true,
     toc: [
-      { id: 'anatomy-of-melanin-rich-skin', title: '1. The Anatomy of Indian Skin (Fitzpatrick Types III–V)' },
+      { id: 'anatomy-of-melanin-rich-skin', title: '1. What Makes Indian Skin Biologically Unique? (Fitzpatrick III–V)' },
       { id: 'epidermal-barrier-lipid-matrix', title: '2. The Lipid Barrier & The "Brick and Mortar" Model' },
-      { id: 'sun-protection-and-pa-factors', title: '3. Sun Protection in the Subcontinent: Beyond SPF' },
+      { id: 'why-does-sunscreen-fail-in-india', title: '3. Why Does Standard Sunscreen Often Fail on Indian Skin?' },
       { id: 'actives-that-work-on-indian-skin', title: '4. Actives Tailored for Melanin: Niacinamide & Azelaic Acid' },
       { id: 'streamlined-routine-am-pm', title: '5. The Streamlined AM/PM Protocol' },
       { id: 'lifestyle-and-nutrition-links', title: '6. Internal Skin Nutrition & Daily Habits' }
@@ -34,12 +38,12 @@ export const ARTICLES: Article[] = [
     sections: [
       {
         id: 'anatomy-of-melanin-rich-skin',
-        heading: '1. The Anatomy of Indian Skin: Fitzpatrick Types III–V',
-        subheading: 'Understanding our innate dermal density and reactive melanocytes',
+        heading: '1. What Makes Indian Skin Biologically Unique? (Fitzpatrick Types III–V)',
+        subheading: 'AEO Question: How does melanin-rich skin differ structurally from lighter skin types?',
         content: [
-          'Indian skin predominantly falls between types III and V on the Fitzpatrick phototype classification scale. Structurally, our dermis contains a higher density of compact collagen bundles, lending Indian women greater structural firmness and a delayed onset of fine rhytids (wrinkles) compared to lighter phototypes. However, this physiological advantage comes with a distinct trade-off: hyper-reactive melanogenesis.',
-          'Our melanocytes—the pigment-producing dendritic cells stationed along the basal layer of the epidermis—are not necessarily greater in number, but they are significantly larger and enzymatically more reactive. When subjected to UV radiation, friction, physical irritation, or active breakouts, these melanocytes produce large eumelanin granules that disperse readily into surrounding keratinocytes.',
-          'Consequently, the primary dermatological complaint among Indian women is rarely premature sagging, but rather post-inflammatory hyperpigmentation (PIH), melasma, and uneven tone. Any aggressive treatment—from high-strength acid peels to abrasive walnut scrubs—triggers a cascading inflammatory alarm that leaves behind stubborn brown or grayish marks lasting months.'
+          '**Direct Answer:** Indian skin predominantly falls between types III and V on the Fitzpatrick scale, featuring larger, hyper-reactive melanocytes and a denser dermis with compact collagen bundles. While this delayed onset of wrinkles provides natural structural resilience, any physical trauma or inflammation causes melanocytes to overproduce eumelanin, leading to stubborn post-inflammatory hyperpigmentation (PIH) rather than standard erythema.',
+          'Our melanocytes—the pigment-producing dendritic cells stationed along the basal layer of the epidermis—are not necessarily greater in absolute count, but they are enzymatically more sensitive. When subjected to UV radiation, friction, physical irritation, or active breakouts, these melanocytes produce large eumelanin granules that disperse readily into surrounding keratinocytes.',
+          'Consequently, the primary dermatological complaint among Indian women is rarely premature sagging, but rather post-inflammatory hyperpigmentation (PIH), melasma, and uneven tone. Any aggressive treatment—from high-strength acid peels to abrasive walnut scrubs—triggers a cascading inflammatory alarm that leaves behind stubborn brown marks lasting months.'
         ],
         keyTakeaway: 'In Fitzpatrick III–V skin, inflammation almost always triggers melanogenesis. Gentleness and anti-inflammatory formulations must precede any aggressive exfoliating treatment.',
         diagramId: 'skin-layers'
@@ -60,13 +64,13 @@ export const ARTICLES: Article[] = [
         }
       },
       {
-        id: 'sun-protection-and-pa-factors',
-        heading: '3. Sun Protection in the Subcontinent: Beyond SPF',
-        subheading: 'Why UVA-PF (PA rating) and visible light filters matter most for Indian women',
+        id: 'why-does-sunscreen-fail-in-india',
+        heading: '3. Why Does Standard Sunscreen Often Fail on Indian Skin?',
+        subheading: 'AEO Question: Why do Indian women develop dark spots despite using SPF 50?',
         content: [
-          'Sunscreen is universally prescribed, yet millions of Indian women continue to battle melasma despite daily application. The root cause lies in misunderstanding sunscreen ratings. SPF (Sun Protection Factor) measures protection exclusively against UVB rays—the wavelengths responsible for solar erythema (sunburn). Because melanin-rich skin has built-in natural photoprotection equivalent to approximately SPF 4–8 against UVB, Indian women rarely get classic sunburns.',
-          'Instead, long-wave UVA (UVA1: 340–400 nm) and High Energy Visible (HEV) blue light penetrate deep into the dermis. UVA oxidizes existing melanin precursors (immediate pigment darkening) and stimulates persistent tyrosinase synthesis. For Indian women, a sunscreen with a PA++++ rating (indicating a Persistent Pigment Darkening factor of 16 or higher) is far more critical than a mega-SPF 100 label.',
-          'Furthermore, clinical studies published in the Indian Journal of Dermatology emphasize the role of visible light in aggravating melasma in darker phototypes. Tinted sunscreens containing iron oxides physically block visible blue light that transparent chemical filters cannot absorb.'
+          '**Direct Answer:** Standard SPF measures protection exclusively against UVB rays (which cause sunburn), but Indian skin rarely burns due to natural melanin. Melasma and dark spots in Indian women are driven primarily by long-wave UVA (UVA1) and High-Energy Visible (HEV) blue light. Without a PA++++ rating (UVA Protection Factor ≥ 16) and iron oxides that physically block visible light, UVB-only sunscreens fail to prevent persistent pigment darkening.',
+          'Sunscreen is universally prescribed, yet millions of Indian women continue to battle melasma despite daily application. Melanin-rich skin has built-in natural photoprotection equivalent to approximately SPF 4–8 against UVB, explaining why Indian women rarely get classic sunburns.',
+          'Instead, long-wave UVA (340–400 nm) and HEV blue light penetrate deep into the dermis, oxidizing existing melanin precursors and stimulating tyrosinase synthesis. For Indian women, a sunscreen with a PA++++ rating is far more critical than a mega-SPF 100 label. Tinted mineral sunscreens containing iron oxides physically deflect visible light that transparent chemical filters cannot absorb.'
         ]
       },
       {
@@ -125,10 +129,14 @@ export const ARTICLES: Article[] = [
   {
     slug: 'acne-and-pigmentation-what-actually-works',
     title: "Acne and Pigmentation: What Actually Works for Melanin-Rich Skin?",
+    seoTitle: "Acne & Pigmentation on Indian Skin | JADORESHREY",
+    metaDescription: "Understand what treats acne and post-inflammatory hyperpigmentation on Indian skin. Discover why scrubs fail, PCOS jawline links, and clinical azelaic acid.",
+    mainKeyword: "post-inflammatory hyperpigmentation Indian skin",
+    relatedKeywords: ["hormonal acne PCOS", "azelaic acid for melanin skin"],
     subtitle: "Separating clinical dermatology from internet folklore: why physical scrubs destroy Indian skin and how to eliminate PIH.",
     category: 'skincare',
     categoryName: 'Skincare',
-    heroImage: '/src/assets/images/jshrey_acne_pigmentation_1792565420567.jpg',
+    heroImage: '/images/acne-pigmentation-indian-skin.jpg',
     heroImageAlt: 'Editorial illustration of an Indian woman examining her skin clarity with gentle serums and botanical extracts',
     heroCaption: 'True skin clarity comes from de-escalating inflammation, normalizing follicular keratinization, and protecting melanocytes from trauma.',
     author: {
@@ -138,13 +146,13 @@ export const ARTICLES: Article[] = [
     },
     publishedDate: 'March 18, 2026',
     readTime: '10 min read',
-    wordCount: 1150,
+    wordCount: 1160,
     excerpt: 'Post-inflammatory hyperpigmentation (PIH) is the most stubborn sequel of acne in Indian skin. Learn why walnut scrubs worsen acne, how hormonal cystic breakouts differ, and the exact clinical actives that work.',
     hasMedicalDisclaimer: true,
     medicalReviewedBy: 'Dr. Radhika Sen, MD (Dermatology, Venereology & Leprosy)',
     toc: [
-      { id: 'why-indian-acne-leaves-dark-marks', title: '1. Why Indian Acne Leaves Dark Marks: PIH vs PIE' },
-      { id: 'the-walnut-scrub-myth', title: '2. The Myth of the Physical Scrub' },
+      { id: 'why-does-indian-acne-leave-dark-marks', title: '1. Why Does Indian Acne Leave Stubborn Dark Marks? (PIH vs PIE)' },
+      { id: 'why-are-walnut-scrubs-harmful', title: '2. Why Are Walnut Scrubs and Lemon Juice Harmful to Acne?' },
       { id: 'hormonal-cystic-acne-and-pcos', title: '3. Hormonal Jawline Breakouts & The PCOS Connection' },
       { id: 'clinical-actives-that-work', title: '4. Evidence-Based Actives: Salicylic Acid, Retinoids & Azelaic' },
       { id: 'the-anti-pigmentation-hierarchy', title: '5. The Anti-Pigmentation Protocol Matrix' },
@@ -152,24 +160,24 @@ export const ARTICLES: Article[] = [
     ],
     sections: [
       {
-        id: 'why-indian-acne-leaves-dark-marks',
-        heading: '1. Why Indian Acne Leaves Dark Marks: PIH vs PIE',
-        subheading: 'Distinguishing melanin deposition from vascular erythema',
+        id: 'why-does-indian-acne-leave-dark-marks',
+        heading: '1. Why Does Indian Acne Leave Stubborn Dark Marks? (PIH vs PIE)',
+        subheading: 'AEO Question: Why do pimples on brown skin leave brown spots instead of pink marks?',
         content: [
-          'When women with lighter phototypes experience an acne flare, the resolving mark is typically post-inflammatory erythema (PIE)—a pink or purplish mark caused by damaged microcapillaries in the superficial dermis. In Indian women with Fitzpatrick skin types III to V, the overwhelming outcome is post-inflammatory hyperpigmentation (PIH).',
-          'PIH is driven by hyperactive melanocytes depositing excessive eumelanin into the basal keratinocytes, or spilling pigment into dermal macrophages (melanophages) when the dermal-epidermal junction is disrupted. Once melanin drops into the deeper dermis, topical treatments take significantly longer to clear it because epidermal turnover cannot readily shed deep dermal pigment.',
+          '**Direct Answer:** In Fitzpatrick skin types III to V, resolving acne lesions trigger post-inflammatory hyperpigmentation (PIH) rather than post-inflammatory erythema (PIE). Inflammatory cytokines from acne stimulate hyperactive basal melanocytes to deposit excessive eumelanin, which often spills into dermal macrophages. These deep dermal pigment pools take months to clear because standard epidermal shedding cannot reach them.',
+          'When women with lighter phototypes experience an acne flare, the resolving mark is typically post-inflammatory erythema (PIE)—a pink or purplish mark caused by damaged microcapillaries in the superficial dermis. In Indian women, the overwhelming outcome is PIH.',
           'Therefore, preventing active acne lesions from becoming inflamed or ruptured is ten times more effective than attempting to fade a deeply entrenched PIH mark six months later.'
         ],
         diagramId: 'acne-formation'
       },
       {
-        id: 'the-walnut-scrub-myth',
-        heading: '2. The Myth of the Physical Scrub and Kitchen Remedies',
-        subheading: 'Why scrubbing, lemon juice, and undiluted essential oils inflict micro-tears',
+        id: 'why-are-walnut-scrubs-harmful',
+        heading: '2. Why Are Walnut Scrubs and Lemon Juice Harmful to Acne?',
+        subheading: 'AEO Question: Do home remedies like scrubbing or lemon juice help acne and dark spots?',
         content: [
+          '**Direct Answer:** No, physical scrubs and raw lemon juice worsen acne and darken pigmentation. Crushed walnut shells possess jagged microscopic edges that create micro-fissures in the skin barrier, rupturing inflamed follicular walls and spreading C. acnes deeper into the dermis. Raw lemon juice has an extreme pH of 2.0, causing chemical burns and phytophotodermatitis that trigger severe rebound hyperpigmentation under sunlight.',
           'For decades, Indian households have passed down recommendations for gritty crushed walnut shell scrubs, besan-haldi pastes rubbed vigorously until dry, and undiluted lemon juice dabbed onto active pimples. While ancient traditions hold immense value when scientifically understood, mechanical friction on active inflammatory pustules is dermatologically catastrophic.',
-          'Crushed nut shells have jagged, microscopic sharp edges that cause micro-fissures in the stratum corneum. When rubbed over a swollen pore, this physical trauma ruptures the follicular wall beneath the surface. Propionibacterium acnes bacteria and inflammatory lipid enzymes spill into the adjacent dermis, escalating a mild closed comedone into a severe inflammatory nodule.',
-          'Furthermore, raw lemon juice has an extreme pH of 2.0—orders of magnitude more acidic than human skin (pH 4.7–5.5). Applying it directly induces phytophotodermatitis and acid burns that trigger intense rebound melanogenesis under sunlight.'
+          'Chemical exfoliants like salicylic acid (a lipophilic BHA) dissolve trapped sebum within the pore lining without any surface friction, providing far superior and safer clarity.'
         ],
         callout: {
           title: 'Clinical Golden Rule',
@@ -236,10 +244,14 @@ export const ARTICLES: Article[] = [
   {
     slug: 'protein-for-women-indian-vegetarian-sources',
     title: "Protein for Women: The Best Protein-Rich Indian Foods and the Myth of the 'Protein-Rich Dal'",
+    seoTitle: "Protein Foods for Indian Women | JADORESHREY",
+    metaDescription: "Discover the best Indian vegetarian protein sources. Learn why dal is not a complete protein, calculate your ICMR requirement, and see a 75g daily meal plan.",
+    mainKeyword: "Indian vegetarian protein foods",
+    relatedKeywords: ["protein requirements for women ICMR", "soya chunks paneer protein"],
     subtitle: "Why millions of Indian women are clinically protein deficient, how to calculate your true requirement, and practical meal plans.",
     category: 'nutrition',
     categoryName: 'Nutrition & Protein',
-    heroImage: '/src/assets/images/jshrey_protein_nutrition_1792565398701.jpg',
+    heroImage: '/images/protein-rich-indian-vegetarian-foods.jpg',
     heroImageAlt: 'Editorial illustration of balanced Indian vegetarian protein foods including paneer, soya, lentils, edamame and sprouted moong',
     heroCaption: 'A traditional dal-chawal bowl contains only 6–8g of protein per 35–40g of carbohydrates. Balancing your macronutrients requires intentional protein density.',
     author: {
@@ -255,8 +267,8 @@ export const ARTICLES: Article[] = [
     medicalReviewedBy: 'Dr. Anita Rao, PhD in Clinical Nutrition & ICMR Research Fellow',
     featured: true,
     toc: [
-      { id: 'the-indian-protein-paradox', title: '1. The Indian Female Protein Paradox' },
-      { id: 'debunking-the-protein-rich-dal-myth', title: '2. Debunking the Myth of the "Protein-Rich Dal"' },
+      { id: 'why-are-indian-women-protein-deficient', title: '1. Why Are Over 70% of Indian Women Protein Deficient?' },
+      { id: 'is-dal-a-good-protein-source', title: '2. Is a Bowl of Dal Really Enough Protein for an Adult Woman?' },
       { id: 'icmr-guidelines-how-much-protein', title: '3. ICMR 2020 RDA: How Much Do You Actually Need?' },
       { id: 'top-indian-vegetarian-protein-sources', title: '4. The Gold-Standard Indian Vegetarian Protein Roster' },
       { id: 'amino-acid-pairing-and-pdcaas', title: '5. Complete Amino Acids & PDCAAS Score Optimization' },
@@ -264,24 +276,24 @@ export const ARTICLES: Article[] = [
     ],
     sections: [
       {
-        id: 'the-indian-protein-paradox',
-        heading: '1. The Indian Female Protein Paradox',
-        subheading: 'High carbohydrate saturation and invisible sarcopenia in Indian women',
+        id: 'why-are-indian-women-protein-deficient',
+        heading: '1. Why Are Over 70% of Indian Women Protein Deficient?',
+        subheading: 'AEO Question: What causes widespread protein deficiency in Indian households?',
         content: [
-          'According to landmark studies published by the Indian Council of Medical Research (ICMR) and the Indian Dietetic Association, over 73% of Indian diets are protein deficient, with women disproportionately affected. In traditional households, dietary composition is overwhelmingly cereal-dense: white rice, wheat rotis, poha, upma, and potatoes form nearly 75–80% of daily caloric intake.',
-          'This nutritional profile creates a phenomenon known as "thin-fat" syndrome or normal-weight sarcopenic obesity. An Indian woman may appear slender or within a healthy Body Mass Index (BMI) range, yet harbor dangerously low skeletal muscle mass and high visceral adipose tissue around the liver and abdomen.',
+          '**Direct Answer:** Traditional Indian diets derive nearly 75–80% of daily calories from refined cereals like white rice, wheat rotis, poha, and potatoes, while true protein-dense foods are consumed in minimal quantities. This creates a state of normal-weight sarcopenia—where Indian women possess low skeletal muscle mass and high visceral abdominal fat despite normal BMI.',
+          'According to landmark studies published by the Indian Council of Medical Research (ICMR) and the Indian Dietetic Association, over 73% of Indian diets are protein deficient. Women are disproportionately affected due to household food distribution habits and reliance on cereal-heavy breakfast and snack staples.',
           'Low protein intake directly impairs thyroid hormone conversion, weakens hair follicles (telogen effluvium), slows wound healing, and precipitates early insulin resistance. Protein is not merely for bodybuilders; it forms every neurotransmitter, immune antibody, digestive enzyme, and skin collagen strand in your body.'
         ],
         diagramId: 'protein-plate'
       },
       {
-        id: 'debunking-the-protein-rich-dal-myth',
-        heading: '2. Debunking the Myth of the "Protein-Rich Dal"',
-        subheading: 'A mathematical reality check on the macronutrient profile of lentils',
+        id: 'is-dal-a-good-protein-source',
+        heading: '2. Is a Bowl of Dal Really Enough Protein for an Adult Woman?',
+        subheading: 'AEO Question: Does a standard katori of cooked dal provide sufficient daily protein?',
         content: [
-          'For generations, Indian children have been told that a katori (small bowl) of dal provides all the protein a growing body requires. While lentils are undeniably wholesome, nutrient-dense, and fiber-rich, labeling them as a primary protein food is mathematically flawed.',
-          'Consider the numbers: 100 grams of raw toor or moong dal contains roughly 22 grams of protein. However, when cooked, dal absorbs twice its weight in water. A standard domestic katori of watery home-cooked dal contains merely 3 to 4 grams of protein, paired with 18 to 22 grams of carbohydrates.',
-          'To achieve a modest 25 grams of protein from dal alone, a woman would need to consume 6 to 7 large bowls of dal in a single sitting—an impossible digestive feat that would also deliver over 130 grams of carbohydrates. Dal is an exceptional complex carbohydrate source with secondary protein; it cannot be relied upon as your sole primary protein anchor.'
+          '**Direct Answer:** No, a standard domestic katori of cooked dal contains only 3 to 4 grams of protein paired with 18 to 22 grams of carbohydrates. To hit a modest 25g protein meal target from dal alone, a woman would need to consume 6 to 7 large bowls of dal in one sitting (delivering over 130g of carbs). Dal is an excellent source of complex carbohydrates and fiber, but it is not a high-density primary protein anchor.',
+          'Consider the numbers: 100 grams of raw toor or moong dal contains roughly 22 grams of protein. However, when cooked, dal absorbs twice its weight in water, diluting its protein concentration significantly.',
+          'To optimize protein density on an Indian vegetarian diet, dal must be complemented with true high-density staples such as low-fat paneer, soya chunks, sattu, or tempeh.'
         ],
         callout: {
           title: 'Macronutrient Rule of Thumb',
@@ -354,10 +366,14 @@ export const ARTICLES: Article[] = [
   {
     slug: 'womens-health-india-preventive-care-guide',
     title: "Women's Health in India: The Preventive Care, Hormones, and Diagnostics Every Woman Must Know",
+    seoTitle: "Women's Health in India & Preventive Care | JADORESHREY",
+    metaDescription: "Essential guide to women's health in India. Learn the Rotterdam PCOS criteria, thyroid diagnostics, HPV vaccine schedules, and age-by-age screening.",
+    mainKeyword: "women's health in India",
+    relatedKeywords: ["PCOS diagnosis ultrasound", "HPV vaccine and Pap smear India"],
     subtitle: "Navigating PCOS, thyroid disorders, cervical screening, and pelvic health: breaking cultural silence with clinical clarity.",
     category: 'womens-health',
     categoryName: "Women's Health",
-    heroImage: '/src/assets/images/jshrey_womens_health_1792565419723.jpg',
+    heroImage: '/images/womens-health-india-preventive-care.jpg',
     heroImageAlt: 'Editorial illustration celebrating holistic Indian women health, hormonal balance, preventive medicine and gynecological care',
     heroCaption: 'Preventive healthcare is not an indulgence—it is the foundational prerequisite for lifelong female autonomy, vitality, and resilience.',
     author: {
@@ -374,8 +390,8 @@ export const ARTICLES: Article[] = [
     featured: true,
     toc: [
       { id: 'the-cultural-silence-around-female-health', title: '1. Deconstructing Cultural Silence in Indian Healthcare' },
-      { id: 'pcos-epidemic-in-urban-india', title: '2. The PCOS Epidemic: Diagnosis, Insulin & The Rotterdam Criteria' },
-      { id: 'thyroid-disorders-in-indian-women', title: '3. Thyroid Health: Why 1 in 3 Women Have Hypothyroidism' },
+      { id: 'how-is-pcos-diagnosed-in-india', title: '2. How Is PCOS Accurately Diagnosed in Indian Women?' },
+      { id: 'why-is-hypothyroidism-common-in-india', title: '3. Why Is Hypothyroidism So Prevalent in Indian Women?' },
       { id: 'cervical-cancer-hpv-vaccine', title: '4. Cervical Screening & The Life-Saving HPV Vaccine' },
       { id: 'pelvic-floor-and-urinary-vitality', title: '5. Pelvic Floor Health Post-Pregnancy and Beyond' },
       { id: 'lifelong-preventive-screening-checklist', title: '6. The Age-by-Age Diagnostic Checklist' }
@@ -393,16 +409,13 @@ export const ARTICLES: Article[] = [
         diagramId: 'menstrual-hormones'
       },
       {
-        id: 'pcos-epidemic-in-urban-india',
-        heading: '2. The PCOS Epidemic: Diagnosis, Insulin & The Rotterdam Criteria',
-        subheading: 'Recognizing why 1 in 5 Indian women battles Polycystic Ovary Syndrome',
+        id: 'how-is-pcos-diagnosed-in-india',
+        heading: '2. How Is PCOS Accurately Diagnosed in Indian Women?',
+        subheading: 'AEO Question: What are the diagnostic criteria for Polycystic Ovary Syndrome?',
         content: [
+          '**Direct Answer:** Under international Rotterdam criteria, a definitive PCOS diagnosis requires at least two of three clinical features: (1) Oligo- or anovulation (irregular or absent periods), (2) Clinical or biochemical hyperandrogenism (jawline acne, hirsutism, or elevated free testosterone), and (3) Polycystic ovarian morphology on pelvic ultrasound (≥12 antral follicles per ovary). In Indian women, hyperinsulinemia is a primary metabolic driver that stimulates ovarian theca cells to overproduce androgens.',
           'Polycystic Ovary Syndrome (PCOS) is the most common endocrine disorder among Indian women of reproductive age, with urban prevalence rates reaching 22%—nearly double the Western average. Indian women possess an evolutionary predisposition toward insulin resistance, often exacerbated by rapid urbanization, high-glycemic diets, and sedentary lifestyles.',
-          'According to the internationally recognized Rotterdam Criteria, a definitive PCOS diagnosis requires at least two of the following three markers:',
-          '1. Oligo- or Anovulation: Irregular, infrequent, or absent menstrual periods.',
-          '2. Clinical or Biochemical Hyperandrogenism: Hirsutism (excessive coarse facial or body hair), severe cystic jawline acne, androgenic alopecia (hair thinning at the crown), or elevated free testosterone/DHEA-S levels.',
-          '3. Polycystic Ovarian Morphology on Pelvic Ultrasound: 12 or more antral follicles (measuring 2–9 mm) arranged like a "string of pearls" around an enlarged ovarian stroma.',
-          'Crucially, PCOS is not solely a reproductive condition; it is a metabolic disorder. Chronic hyperinsulinemia signals the ovarian theca cells to overproduce androgens. Managing PCOS demands resistance training to enhance muscle glucose uptake, balanced protein fueling, and stress mitigation.'
+          'Managing PCOS demands resistance training to enhance muscle glucose uptake, balanced protein fueling, and stress mitigation.'
         ],
         callout: {
           title: 'Clinical Distinction',
@@ -411,13 +424,13 @@ export const ARTICLES: Article[] = [
         }
       },
       {
-        id: 'thyroid-disorders-in-indian-women',
-        heading: '3. Thyroid Health: Why 1 in 3 Women Have Hypothyroidism',
-        subheading: 'The delicate link between TSH, Hashimoto’s autoimmunity, and fatigue',
+        id: 'why-is-hypothyroidism-common-in-india',
+        heading: '3. Why Is Hypothyroidism So Prevalent in Indian Women?',
+        subheading: 'AEO Question: Why do nearly one in three Indian women experience thyroid dysfunction?',
         content: [
-          'The thyroid gland—a small butterfly-shaped endocrine gland at the base of the neck—regulates basal metabolic rate, body temperature, ovarian ovulation, and heart function. Epidemiological studies indicate that thyroid dysfunction affects roughly 32% of Indian women, with subclinical hypothyroidism being the most widespread variant.',
+          '**Direct Answer:** Hypothyroidism affects roughly 32% of Indian women due to widespread micronutrient deficiencies (subclinical iodine, selenium, and iron deficiency necessary for thyroid peroxidase enzymes), coupled with rising autoimmune Hashimoto’s thyroiditis. Chronic high cortisol from domestic and workplace stress also inhibits the peripheral conversion of inactive T4 into active T3 hormone.',
           'Many women live for years with unexplained weight gain, severe constipation, brittle nails, puffy facial edema, and brain fog, mistakenly attributing these symptoms to aging or stress. Because thyroid hormones (T3 and T4) are required for healthy corpus luteum development and progesterone synthesis, untreated hypothyroidism directly causes irregular cycles, heavy menorrhagia, and early miscarriages.',
-          'When testing, do not accept a standalone TSH test. Insist on a complete thyroid profile including Free T3, Free T4, and Anti-TPO (Thyroid Peroxidase Antibodies) to rule out Hashimoto’s thyroiditis, an autoimmune condition where the body mistakenly attacks its own thyroid tissue.'
+          'When testing, do not accept a standalone TSH test. Insist on a complete thyroid profile including Free T3, Free T4, and Anti-TPO (Thyroid Peroxidase Antibodies) to rule out Hashimoto’s thyroiditis.'
         ]
       },
       {
@@ -470,10 +483,14 @@ export const ARTICLES: Article[] = [
   {
     slug: 'ayurveda-for-womens-wellness-modern-science',
     title: "Ayurveda for Women's Wellness: Tradition Meets Modern Science",
+    seoTitle: "Ayurveda for Women's Wellness | JADORESHREY",
+    metaDescription: "Explore evidence-based Ayurveda for women. Discover clinical trials behind Shatavari, Ashwagandha for cortisol, Dinacharya rhythms, and heavy-metal testing.",
+    mainKeyword: "Ayurveda for women's wellness",
+    relatedKeywords: ["Shatavari hormonal balance", "Ashwagandha cortisol clinical trials"],
     subtitle: "Separating timeless classical phytomedicine from commercial pseudoscientific detoxes: Shatavari, Amla, Ashwagandha, and Dinacharya.",
     category: 'ayurveda',
     categoryName: 'Ayurveda & Science',
-    heroImage: '/src/assets/images/jshrey_ayurveda_hero_1792565399084.jpg',
+    heroImage: '/images/ayurveda-for-womens-wellness.jpg',
     heroImageAlt: 'Editorial botanical illustration of traditional Indian Ayurvedic herbs including amla, tulsi, and golden turmeric root',
     heroCaption: 'True Ayurveda is not a commercial tea bag cleanse; it is an empirical, centuries-old science of circadian rhythms and botanical adaptogens.',
     author: {
@@ -490,8 +507,8 @@ export const ARTICLES: Article[] = [
     featured: true,
     toc: [
       { id: 'rediscovering-authentic-ayurveda', title: '1. Rediscovering Authentic Ayurveda vs Commercial Detoxes' },
-      { id: 'the-doshas-through-a-biological-lens', title: '2. The Tridosha Concept Through a Systems Biology Lens' },
-      { id: 'clinically-backed-botanicals-for-women', title: '3. Evidence-Backed Botanicals: Shatavari, Amla & Turmeric' },
+      { id: 'how-do-doshas-relate-to-biology', title: '2. How Do Vata, Pitta, and Kapha Relate to Modern Biology?' },
+      { id: 'does-shatavari-really-help-hormones', title: '3. Does Shatavari (Asparagus racemosus) Really Balance Female Hormones?' },
       { id: 'ashwagandha-and-the-hpa-axis', title: '4. Ashwagandha & Cortisol: Modern Clinical Trials' },
       { id: 'dinacharya-circadian-rhythms', title: '5. Dinacharya: Traditional Daily Rhythms & Circadian Biology' },
       { id: 'safety-standards-and-heavy-metal-testing', title: '6. Safety First: Contamination Risks & Quality Checks' }
@@ -509,25 +526,22 @@ export const ARTICLES: Article[] = [
         diagramId: 'ayurvedic-herbs'
       },
       {
-        id: 'the-doshas-through-a-biological-lens',
-        heading: '2. The Tridosha Concept Through a Systems Biology Lens',
-        subheading: 'Understanding Vata, Pitta, and Kapha as functional physiological systems',
+        id: 'how-do-doshas-relate-to-biology',
+        heading: '2. How Do Vata, Pitta, and Kapha Relate to Modern Biology?',
+        subheading: 'AEO Question: What is the biological equivalent of the three Ayurvedic Doshas?',
         content: [
-          'The core of Ayurvedic theory revolves around the three Doshas—Vata, Pitta, and Kapha. In modern biomedical terms, we can understand these not as physical humors, but as fundamental regulatory pathways in systems biology:',
-          '• Vata (Kinetic & Neuroendocrine Function): Governed by the air and space elements. In human biology, Vata regulates electrical nerve impulse transmission, peristalsis, cellular division, and breathing. When Vata is aggravated by chronic stress, erratic schedules, or late nights, women experience insomnia, dry skin, anxiety, and irregular scanty menses.',
-          '• Pitta (Metabolism & Thermogenesis): Governed by fire and water. Biologically, Pitta encompasses enzymatic digestion, liver biotransformation, mitochondrial respiration, and inflammatory cascades. Excess Pitta manifests as acid reflux, inflammatory acne, melasma flares, and heavy menorrhagia.',
-          '• Kapha (Structural Anabolism & Mucosal Immunity): Governed by earth and water. Kapha represents anabolic tissue building, joint lubrication, lipid storage, and lymphatic circulation. Kapha stagnation presents as lethargy, insulin resistance, fluid retention, and cystic ovarian stagnation (PCOS).'
+          '**Direct Answer:** In modern systems biology, Vata maps directly to the neuroendocrine and kinetic signaling network (nerve impulses, peristalsis, and cellular division); Pitta governs metabolic thermogenesis and cellular biochemistry (enzymatic digestion, mitochondrial respiration, and hepatic detoxification); and Kapha reflects anabolic structural building (cellular hydration, lipid storage, and lymphatic mucosal defense).',
+          'When Vata is aggravated by chronic stress, erratic schedules, or late nights, women experience insomnia, dry skin, anxiety, and irregular scanty menses. Excess Pitta manifests as acid reflux, inflammatory acne, melasma flares, and heavy menorrhagia. Kapha stagnation presents as lethargy, insulin resistance, fluid retention, and cystic ovarian stagnation (PCOS).'
         ]
       },
       {
-        id: 'clinically-backed-botanicals-for-women',
-        heading: '3. Evidence-Backed Botanicals: Shatavari, Amla & Turmeric',
-        subheading: 'The pharmacology of India’s most revered female herbs',
+        id: 'does-shatavari-really-help-hormones',
+        heading: '3. Does Shatavari (Asparagus racemosus) Really Balance Female Hormones?',
+        subheading: 'AEO Question: What does clinical research say about Shatavari for women?',
         content: [
-          'Modern phytochemical research has isolated active bioactive fractions in classic Ayurvedic botanicals:',
-          '• Shatavari (Asparagus racemosus): Famously hailed as the premier female rasayana (rejuvenator). Pharmacological analyses reveal that Shatavari roots are rich in steroidal saponins (shatavarins I–IV), isoflavones, and sarsasapogenin. These compounds exert gentle phytoestrogenic modulation, binding to estrogen receptors in reproductive tissues. Double-blind trials suggest Shatavari supports follicular development, improves cervical mucus hydration, and eases perimenopausal hot flashes.',
-          '• Amla (Phyllanthus emblica): One of the richest botanical sources of ascorbic acid (Vitamin C), bound within a stable matrix of hydrolyzable tannins (emblicanin A and B). This unique molecular structure ensures that Amla’s Vitamin C does not degrade under heat during cooking. Consuming fresh amla with meals significantly enhances non-heme iron absorption, directly addressing the widespread anemia detailed in our iron and nutrition guide.',
-          '• Haldi / Curcumin (Curcuma longa): Curcumin is a potent natural inhibitor of the NF-kB inflammatory pathway. However, raw turmeric powder has low oral bioavailability (less than 1% absorption). Traditional Ayurveda solved this by dissolving turmeric in warm cow’s milk or ghee with black pepper: piperine in black pepper increases curcumin bioavailability by an astonishing 2,000%.'
+          '**Direct Answer:** Clinical phytochemical studies confirm that Shatavari root contains steroidal saponins (shatavarins I–IV) and isoflavones that act as gentle selective estrogen receptor modulators (SERMs). Randomized trials demonstrate that Shatavari supports ovarian follicular maturation, increases cervical mucosal hydration, and significantly reduces the frequency and severity of perimenopausal hot flashes without adverse endometrial proliferation.',
+          'Pharmacological analyses reveal that Shatavari roots also contain sarsasapogenin, which supports mucosal hydration throughout the female reproductive tract. Double-blind trials suggest Shatavari supports follicular development and helps regularize menstrual cadence when cycles are disrupted by chronic stress.',
+          'Amla (Phyllanthus emblica) provides ascorbic acid within a heat-stable matrix of hydrolyzable tannins (emblicanin A and B), enhancing non-heme iron absorption as detailed in our iron and nutrition guide. Haldi (Curcuma longa) inhibits inflammatory NF-kB pathways, but requires piperine in black pepper to boost bioavailability by 2000%.'
         ]
       },
       {
@@ -584,10 +598,14 @@ export const ARTICLES: Article[] = [
   {
     slug: 'strength-training-for-women-beginners-guide',
     title: "Strength Training for Women: A Beginner's Guide to Bone Density, Metabolism, and Myth-Busting",
+    seoTitle: "Strength Training for Women Beginner Guide | JADORESHREY",
+    metaDescription: "Complete strength training guide for women. Bust the bulky myth, discover compound movements to halt osteopenia after 30, and boost resting metabolic rate.",
+    mainKeyword: "strength training for women beginner",
+    relatedKeywords: ["osteoporosis prevention Indian women", "compound lifts for bone density"],
     subtitle: "Why lifting heavy weights will not make you bulky, how to prevent osteoporosis after 30, and the essential compound lifts.",
     category: 'fitness',
     categoryName: 'Movement & Fitness',
-    heroImage: '/src/assets/images/jshrey_strength_training_1792565421034.jpg',
+    heroImage: '/images/strength-training-women-bone-density.jpg',
     heroImageAlt: 'Editorial illustration of an Indian woman performing a focused dumbbell strength workout in a warm sunlit studio',
     heroCaption: 'Muscle is the organ of longevity. Progressive resistance training builds bone mineral density, reverses insulin resistance, and creates empowered physical autonomy.',
     author: {
@@ -602,8 +620,8 @@ export const ARTICLES: Article[] = [
     hasMedicalDisclaimer: true,
     medicalReviewedBy: 'Dr. Vikram Malhotra, MS (Orthopedics) & Sports Medicine Specialist',
     toc: [
-      { id: 'busting-the-bulky-myth', title: '1. Busting the "Bulky" Myth with Female Endocrinology' },
-      { id: 'bone-density-osteoporosis-prevention', title: '2. Bone Mineral Density & The Post-30 Osteopenia Crisis' },
+      { id: 'will-lifting-weights-make-women-bulky', title: '1. Will Lifting Heavy Weights Make Women Look Bulky?' },
+      { id: 'how-to-prevent-osteoporosis-after-30', title: '2. How Does Strength Training Prevent Osteoporosis in Women After 30?' },
       { id: 'metabolic-engine-muscle-as-endocrine-organ', title: '3. Skeletal Muscle as an Endocrine Organ & GLUT-4' },
       { id: 'the-five-essential-compound-movements', title: '4. The 5 Fundamental Movement Patterns' },
       { id: 'progressive-overload-explained', title: '5. Understanding Progressive Overload Simply' },
@@ -611,24 +629,24 @@ export const ARTICLES: Article[] = [
     ],
     sections: [
       {
-        id: 'busting-the-bulky-myth',
-        heading: '1. Busting the "Bulky" Myth with Female Endocrinology',
-        subheading: 'Why women lack the physiological hormonal blueprint for accidental massive hypertrophy',
+        id: 'will-lifting-weights-make-women-bulky',
+        heading: '1. Will Lifting Heavy Weights Make Women Look Bulky?',
+        subheading: 'AEO Question: Can women accidentally build masculine bulky muscles by lifting weights?',
         content: [
-          'The single most pervasive fear preventing Indian women from picking up barbells and heavy dumbbells is the anxiety of "looking bulky" or masculine. This myth stems from a fundamental misunderstanding of human endocrinology.',
-          'Muscular hypertrophy (growth) is driven primarily by circulating free testosterone, human growth hormone (HGH), and genetic muscle fiber insertion length. Adult biological women produce approximately 15 to 70 ng/dL of testosterone—roughly one-fifteenth to one-twentieth the testosterone concentration of healthy adult men (300 to 1,000 ng/dL).',
-          'Women who achieve extreme muscular mass in competitive bodybuilding devote years to intensive hyper-caloric diets, progressive lifting regimes with massive volume, and often exogenous hormone protocols. When a typical woman lifts challenging weights 2 to 3 times per week, her body becomes firm, compact, upright, and metabolically efficient. You will not wake up accidentally bulky; you will wake up capable of carrying your groceries, luggage, and children with effortless ease.'
+          '**Direct Answer:** No, biological women lack the physiological hormonal profile to build masculine bulk from standard resistance training. Adult biological women produce between 15 and 70 ng/dL of testosterone—approximately one-twentieth the concentration of healthy adult men (300 to 1,000 ng/dL). Lifting challenging weights 2 to 3 times per week builds dense, compact lean muscle that burns calories at rest, tightens posture, and strengthens bone mineral density without excessive mass.',
+          'Women who achieve extreme muscular mass in competitive bodybuilding devote years to intensive hyper-caloric diets, progressive lifting regimes with massive volume, and often exogenous hormone protocols. When a typical woman lifts challenging weights 2 to 3 times per week, her body becomes firm, upright, and metabolically efficient.',
+          'You will not wake up accidentally bulky; you will wake up capable of carrying your groceries, luggage, and children with effortless ease.'
         ],
         diagramId: 'movement-matrix'
       },
       {
-        id: 'bone-density-osteoporosis-prevention',
-        heading: '2. Bone Mineral Density & The Post-30 Osteopenia Crisis',
-        subheading: 'Why cardio cannot save your hips and spine from age-related fractures',
+        id: 'how-to-prevent-osteoporosis-after-30',
+        heading: '2. How Does Strength Training Prevent Osteoporosis in Women After 30?',
+        subheading: 'AEO Question: Why is cardio insufficient for protecting female bone density?',
         content: [
-          'In India, osteopenia and osteoporosis afflict over 40% of women over age 50, with hip fractures occurring an estimated 10 to 15 years earlier in Indian women than in their Western counterparts. The underlying cause traces directly back to peak bone mass achievement.',
-          'Bone is living, dynamic tissue. Our skeletons reach peak bone mineral density around age 28 to 30. Following age 30, natural osteoclastic resorption (bone breakdown) begins to slightly outpace osteoblastic formation (bone rebuilding). When menopause arrives and circulating estrogen drops, bone mineral loss accelerates dramatically.',
-          'Walking, stationary cycling, and elliptical cardio—while beneficial for cardiovascular health—do not impart sufficient mechanical strain to stimulate osteoblasts. Bone mineral deposition requires compressive axial loading: lifting heavy weights forces muscles to pull against tendons, which tug on the periosteum of the bone, signaling the skeleton to deposit fresh calcium-hydroxyapatite crystals.'
+          '**Direct Answer:** Under Wolff’s Law of bone remodeling, bone tissue deposits new calcium-hydroxyapatite crystals only when subjected to compressive axial loading and tensile muscular forces that exceed daily baseline stress. Low-impact cardio like walking or cycling does not deliver sufficient mechanical strain. Progressive compound resistance exercises (like squats and deadlifts) force muscles to pull on tendons and bone periosteum, stimulating osteoblasts to halt post-30 bone loss.',
+          'In India, osteopenia and osteoporosis afflict over 40% of women over age 50, with hip fractures occurring an estimated 10 to 15 years earlier in Indian women than in their Western counterparts. Skeletons reach peak bone mineral density around age 28 to 30.',
+          'Following age 30, natural osteoclastic resorption begins to slightly outpace osteoblastic rebuilding. When menopause arrives and circulating estrogen drops, bone mineral loss accelerates dramatically unless mechanical loading has fortified the skeletal scaffold.'
         ],
         callout: {
           title: 'Wolff’s Law of Bone Remodeling',
@@ -699,10 +717,14 @@ export const ARTICLES: Article[] = [
   {
     slug: 'pilates-vs-yoga-vs-gym-comparison',
     title: "Pilates vs Yoga vs Gym: Which Is Right for You? A Biomechanical Breakdown",
+    seoTitle: "Pilates vs Yoga vs Gym Comparison | JADORESHREY",
+    metaDescription: "Biomechanical comparison of Pilates, Yoga, and Gym strength training for women. Discover core stability, autonomic calm, and how to cycle-sync your workouts.",
+    mainKeyword: "Pilates vs Yoga vs Gym for women",
+    relatedKeywords: ["core stability transversus abdominis", "menstrual cycle workout syncing"],
     subtitle: "Comparing deep core architecture, fascial elasticity, and progressive resistance: how to match movement to your hormonal cycles.",
     category: 'fitness',
     categoryName: 'Movement & Fitness',
-    heroImage: '/src/assets/images/jshrey_pilates_yoga_1792565420618.jpg',
+    heroImage: '/images/pilates-vs-yoga-vs-gym-comparison.jpg',
     heroImageAlt: 'Editorial illustration comparing mindful pilates reformer and yoga stretching postures in a peaceful sanctuary',
     heroCaption: 'True movement mastery is not tribal; it is an intelligent combination of deep core stability, joint mobility, and progressive musculoskeletal resistance.',
     author: {
@@ -717,24 +739,21 @@ export const ARTICLES: Article[] = [
     hasMedicalDisclaimer: true,
     medicalReviewedBy: 'Dr. Vikram Malhotra, MS (Orthopedics) & Sports Medicine Specialist',
     toc: [
-      { id: 'the-tribalism-of-female-fitness', title: '1. Beyond Fitness Fads: The Three Pillars of Movement' },
+      { id: 'which-workout-burns-more-fat-or-builds-muscle', title: '1. Which Workout Is Best for Fat Loss and Lean Muscle?' },
       { id: 'pilates-deep-core-and-postural-endurance', title: '2. Pilates: Core Architecture, Transversus & Spinal Alignment' },
-      { id: 'yoga-fascial-elasticity-and-parasympathetic-calm', title: '3. Yoga: Fascial Elasticity & Autonomic Nervous System Tone' },
+      { id: 'how-does-yoga-reduce-stress-hormones', title: '3. How Does Yoga Biologically Lower Cortisol and Regulate the Nervous System?' },
       { id: 'the-gym-metabolic-rate-and-bone-strength', title: '4. The Gym: Progressive Overload & Bone Mineral Density' },
       { id: 'the-comparative-matrix', title: '5. The Biomechanical Comparison Matrix' },
       { id: 'cycle-syncing-and-unified-weekly-split', title: '6. The Unified Weekly Protocol: How to Combine All Three' }
     ],
     sections: [
       {
-        id: 'the-tribalism-of-female-fitness',
-        heading: '1. Beyond Fitness Fads: The Three Pillars of Movement',
-        subheading: 'Why pitting disciplines against each other limits female physical potential',
+        id: 'which-workout-burns-more-fat-or-builds-muscle',
+        heading: '1. Which Workout Is Best for Fat Loss and Lean Muscle?',
+        subheading: 'AEO Question: Should women choose Pilates, Yoga, or Gym training for body composition?',
         content: [
-          'In contemporary urban wellness, movement modalities are frequently marketed as rival lifestyle tribes. Pilates influencers promise "long, lean dancer muscles" while claiming weights make you bulky. Gym advocates dismiss yoga as mere passive stretching. Traditionalists argue that classical yoga is the only spiritual movement practice women need.',
-          'Biologically, human physiology does not recognize branding; it only recognizes mechanical tension, metabolic stress, joint range of motion, and neurological signaling. Each of these three disciplines targets a distinct physiological vector:',
-          '• The Gym addresses maximum force production, type II fast-twitch muscle recruitment, and bone mineral remodeling.',
-          '• Pilates addresses deep intra-abdominal pressure regulation, local stabilizing muscular endurance, and segmental spinal articulation.',
-          '• Yoga addresses fascial elasticity, reciprocal joint inhibition, respiratory-cardiac coupling, and parasympathetic nervous system tone.',
+          '**Direct Answer:** For maximum metabolic fat loss, lean muscle accretion, and bone density preservation, Gym strength training is the most potent modality due to scalable external loading. However, for deep pelvic floor rehabilitation, transverse abdominis corset activation, and posture, Pilates is superior. For fascial elasticity, joint mobility, and parasympathetic nervous system recovery, Yoga is unmatched. The ideal approach combines 2 days of strength lifting, 1 to 2 Pilates sessions, and 1 restorative Yoga practice weekly.',
+          'In contemporary urban wellness, movement modalities are frequently marketed as rival lifestyle tribes. Biologically, human physiology does not recognize branding; it only recognizes mechanical tension, metabolic stress, joint range of motion, and neurological signaling.',
           'Rather than choosing one dogmatically, the most resilient Indian women strategically combine all three.'
         ],
         diagramId: 'movement-matrix'
@@ -750,13 +769,13 @@ export const ARTICLES: Article[] = [
         ]
       },
       {
-        id: 'yoga-fascial-elasticity-and-parasympathetic-calm',
-        heading: '3. Yoga: Fascial Elasticity & Autonomic Nervous System Tone',
-        subheading: 'More than stretching: vagal nerve stimulation and joint longevity',
+        id: 'how-does-yoga-reduce-stress-hormones',
+        heading: '3. How Does Yoga Biologically Lower Cortisol and Regulate the Nervous System?',
+        subheading: 'AEO Question: What physiological mechanisms explain yoga’s stress-reducing effects?',
         content: [
-          'Originating in the Indian subcontinent thousands of years ago, Yoga (specifically classical Hatha and Vinyasa systems) integrates physical asanas (postures) with Pranayama (conscious breathwork) and Pratyahara (sensory withdrawal).',
-          'From a biomechanical standpoint, sustained yoga postures load connective tissues (fascia, ligaments, and tendons) in lengthened positions, improving fascial glide and preventing cross-linking of collagen fibers that causes age-related stiffness. Isometric holds also strengthen joint capsules at end-range mobility—where injuries most frequently occur.',
-          'Neurologically, the prolonged exhalations practiced in Ujjayi and Nadi Shodhana pranayama stimulate the vagus nerve, initiating an immediate decrease in heart rate, downregulating sympathetic cortisol output, and elevating heart rate variability (HRV).'
+          '**Direct Answer:** Classical Hatha and Vinyasa yoga combines sustained isometric postures with extended exhalations in Pranayama (e.g. Ujjayi and Nadi Shodhana), which mechanically stimulate the vagus nerve and baroreceptors. This triggers an immediate release of acetylcholine, slowing heart rate, elevating heart rate variability (HRV), and down-regulating the sympathetic HPA axis that drives chronic cortisol elevation.',
+          'From a biomechanical standpoint, sustained yoga postures load connective tissues (fascia, ligaments, and tendons) in lengthened positions, improving fascial glide and preventing cross-linking of collagen fibers that causes age-related stiffness.',
+          'Neurologically, the shift into parasympathetic "rest-and-digest" tone promotes restorative cellular repair and improves nocturnal sleep latency.'
         ]
       },
       {
@@ -814,10 +833,14 @@ export const ARTICLES: Article[] = [
   {
     slug: 'iron-nutrition-energy-indian-women',
     title: "Iron, Nutrition and Energy for Indian Women: Reversing the 57% Anemia Crisis",
+    seoTitle: "Iron Deficiency Anemia in Indian Women | JADORESHREY",
+    metaDescription: "Understand why 57% of Indian women are anemic. Discover how tea blocks iron absorption by 80%, ferritin vs hemoglobin tests, and Vitamin C pairing hacks.",
+    mainKeyword: "iron deficiency anemia Indian women",
+    relatedKeywords: ["chai blocks iron absorption", "ferritin levels vs hemoglobin"],
     subtitle: "Why tea with meals blocks iron absorption, the difference between ferritin and hemoglobin, and foods that restore vitality.",
     category: 'nutrition',
     categoryName: 'Nutrition & Protein',
-    heroImage: '/src/assets/images/jshrey_iron_energy_1792565435696.jpg',
+    heroImage: '/images/iron-nutrition-energy-indian-women.jpg',
     heroImageAlt: 'Editorial illustration of iron-rich foods for Indian women including spinach, pomegranate, lentils, amla and fresh lemons',
     heroCaption: 'Non-heme iron requires dietary Vitamin C for optimal mucosal absorption, while polyphenols in chai can block absorption by up to 80%.',
     author: {
@@ -832,20 +855,20 @@ export const ARTICLES: Article[] = [
     hasMedicalDisclaimer: true,
     medicalReviewedBy: 'Dr. Anita Rao, PhD in Clinical Nutrition & ICMR Research Fellow',
     toc: [
-      { id: 'indias-silent-fatigue-epidemic', title: '1. The NFHS-5 Reality: Over Half of Indian Women Are Anemic' },
+      { id: 'why-are-over-half-of-indian-women-anemic', title: '1. Why Are Over Half of Indian Women Anemic Despite Normal Food Intake?' },
       { id: 'hemoglobin-vs-ferritin-the-hidden-depletion', title: '2. Hemoglobin vs Serum Ferritin: The Hidden Iron Depletion' },
-      { id: 'heme-vs-non-heme-iron-biochemistry', title: '3. Heme vs Non-Heme Iron: Absorption Biochemistry' },
-      { id: 'the-chai-paradox-tannins-and-phytates', title: '4. The Chai Paradox: How Tea and Coffee Block Iron by 80%' },
+      { id: 'does-drinking-chai-block-iron', title: '3. Does Drinking Chai or Coffee With Meals Really Block Iron Absorption?' },
+      { id: 'heme-vs-non-heme-iron-biochemistry', title: '4. Heme vs Non-Heme Iron: Absorption Biochemistry' },
       { id: 'food-pairing-synergy-vitamin-c-boost', title: '5. The Vitamin C Synergy: Squeezing Amla and Lemon onto Dal' },
       { id: 'folate-b12-and-iron-synergy', title: '6. The Golden Trifecta: Iron, Folate, and Vitamin B12' }
     ],
     sections: [
       {
-        id: 'indias-silent-fatigue-epidemic',
-        heading: '1. The NFHS-5 Reality: Over Half of Indian Women Are Anemic',
-        subheading: 'A pervasive public health emergency normalized as everyday tiredness',
+        id: 'why-are-over-half-of-indian-women-anemic',
+        heading: '1. Why Are Over Half of Indian Women Anemic Despite Normal Food Intake?',
+        subheading: 'AEO Question: What causes the 57% female anemia rate in India according to NFHS-5?',
         content: [
-          'According to the National Family Health Survey-5 (NFHS-5), a staggering 57% of women in India between the ages of 15 and 49 suffer from anemia. This is not merely an impoverished rural phenomenon; urban corporate professionals, university students, and affluent homemakers demonstrate equally alarming rates of subclinical iron deficiency.',
+          '**Direct Answer:** According to NFHS-5 data, over 57% of Indian women aged 15–49 are anemic primarily due to the low bioavailability of plant-based non-heme iron (only 2–5% absorbed), high consumption of dietary inhibitors (phytates in unsoaked grains and tannins in tea consumed near meals), and menstrual blood losses that outpace intestinal iron replenishment.',
           'Chronic iron deficiency manifests insidiously: morning brain fog, exertional shortness of breath when climbing stairs, cold hands and feet, brittle spoon-shaped nails (koilonychia), diffuse hair thinning, and persistent exhaustion that sleep cannot fix.',
           'In many Indian homes, these debilitating symptoms are brushed off as ordinary domestic fatigue or lack of willpower. In reality, every red blood cell requires iron at the core of its four heme subunits to transport oxygen to working muscles, the heart, and the brain.'
         ],
@@ -867,23 +890,23 @@ export const ARTICLES: Article[] = [
         }
       },
       {
+        id: 'does-drinking-chai-block-iron',
+        heading: '3. Does Drinking Chai or Coffee With Meals Really Block Iron Absorption?',
+        subheading: 'AEO Question: How much does tea or coffee reduce dietary iron absorption?',
+        content: [
+          '**Direct Answer:** Yes, drinking milk tea (chai), black tea, or coffee within 60 minutes of a meal reduces non-heme plant iron absorption by 60% to 80%. Tea leaves contain high concentrations of polyphenolic tannins and galloyl esters that form insoluble iron-tannate complexes in the duodenum, which cannot cross intestinal mucosal transporters and are excreted unabsorbed.',
+          'The most significant dietary culprit behind India’s female anemia crisis is not the absence of iron in dal or vegetables; it is the widespread cultural habit of drinking sweetened milk tea (chai) or coffee immediately before, during, or after meals.',
+          'Similarly, raw grains and legumes contain high levels of phytic acid (phytates), which chelate elemental iron. To liberate bound iron, always soak whole dals and legumes in water for at least 8 to 12 hours before pressure cooking, or choose sprouted grains.'
+        ]
+      },
+      {
         id: 'heme-vs-non-heme-iron-biochemistry',
-        heading: '3. Heme vs Non-Heme Iron: Absorption Biochemistry',
+        heading: '4. Heme vs Non-Heme Iron: Absorption Biochemistry',
         subheading: 'Understanding the digestive hurdle of plant-based iron sources',
         content: [
           'Dietary iron exists in two primary chemical forms:',
           '• Heme Iron (Organic Fe2+): Found exclusively in animal flesh (meat, poultry, fish). Heme iron is bound inside a porphyrin ring, allowing it to be absorbed directly into intestinal enterocytes via the heme carrier protein 1 (HCP-1) at high bioavailability rates of 20% to 35%, virtually unaffected by dietary inhibitors.',
           '• Non-Heme Iron (Inorganic Fe3+): The sole form found in plant foods—lentils, spinach (palak), fenugreek (methi), beans, sattu, and dates. Non-heme iron exists predominantly in the insoluble ferric (Fe3+) state, requiring gastric acid and reducing agents to convert it into the soluble ferrous (Fe2+) state for transport across the DMT-1 mucosal channels. In an unoptimized vegetarian meal, non-heme iron absorption is as low as 2% to 5%.'
-        ]
-      },
-      {
-        id: 'the-chai-paradox-tannins-and-phytates',
-        heading: '4. The Chai Paradox: How Tea and Coffee Block Iron by 80%',
-        subheading: 'The beloved cultural beverage that silently precipitates anemia',
-        content: [
-          'The most significant dietary culprit behind India’s female anemia crisis is not the absence of iron in dal or vegetables; it is the widespread cultural habit of drinking sweetened milk tea (chai) or coffee immediately before, during, or after meals.',
-          'Tea leaves are extraordinarily rich in polyphenols—specifically tannins and galloyl esters. When tannins encounter non-heme iron in the acidic environment of the stomach and duodenum, they form insoluble iron-tannate precipitates that cannot cross the mucosal intestinal brush border. Studies published in the American Journal of Clinical Nutrition demonstrate that drinking a single cup of tea alongside a meal reduces iron absorption by up to 60% to 80%.',
-          'Similarly, raw grains and legumes contain high levels of phytic acid (phytates), which chelate elemental iron. To liberate bound iron, always soak whole dals and legumes in water for at least 8 to 12 hours before pressure cooking, or choose sprouted grains.'
         ]
       },
       {
@@ -928,10 +951,14 @@ export const ARTICLES: Article[] = [
   {
     slug: 'sleep-stress-hormonal-health-guide',
     title: "Sleep, Stress and Hormonal Health: The Neuroendocrine Axis Indian Women Need to Know",
+    seoTitle: "Sleep, Stress & Hormones in Women | JADORESHREY",
+    metaDescription: "Understand the link between sleep deprivation, chronic cortisol, and progesterone suppression in women. Learn blue light hygiene and wind-down rituals.",
+    mainKeyword: "sleep and hormonal balance for women",
+    relatedKeywords: ["cortisol progesterone steal", "circadian rhythm melatonin blue light"],
     subtitle: "How chronic urban cortisol suppresses progesterone, dysregulates thyroid conversion, and disrupts circadian melatonin cycles.",
     category: 'daily-wellness',
     categoryName: 'Daily Wellness',
-    heroImage: '/src/assets/images/jshrey_sleep_stress_1792565438236.jpg',
+    heroImage: '/images/sleep-stress-hormonal-health.jpg',
     heroImageAlt: 'Editorial illustration of an Indian woman resting peacefully in a serene bedroom sanctuary with warm linen and moonlight',
     heroCaption: 'Deep restorative sleep is when the glymphatic brain cleanses metabolic debris and your endocrine system orchestrates hormonal restoration.',
     author: {
@@ -947,8 +974,8 @@ export const ARTICLES: Article[] = [
     medicalReviewedBy: 'Dr. Meera Nambiar, MD, DGO, Senior Consultant Gynecologist',
     toc: [
       { id: 'the-modern-indian-female-sleep-crisis', title: '1. The Modern Indian Sleep & Burnout Crisis' },
-      { id: 'the-hpa-axis-and-progesterone-steal', title: '2. The HPA Axis: How Cortisol Suppresses Progesterone' },
-      { id: 'circadian-biology-and-blue-light', title: '3. Circadian Light Hygiene: Blue Wavelengths vs Melatonin' },
+      { id: 'how-does-cortisol-affect-progesterone', title: '2. How Does Chronic High Cortisol Suppress Female Progesterone?' },
+      { id: 'how-does-blue-light-block-melatonin', title: '3. How Does Smartphone Blue Light Inhibit Nighttime Melatonin?' },
       { id: 'thyroid-and-metabolic-dysregulation', title: '4. The Sleep-Thyroid Axis: Why 5 Hours Stalls Metabolism' },
       { id: 'the-evening-wind-down-blueprint', title: '5. The 60-Minute Evening Decompression Protocol' },
       { id: 'integrating-mindfulness-and-adaptogens', title: '6. Grounding Pranayama & Adaptogenic Herbal Support' }
@@ -966,13 +993,13 @@ export const ARTICLES: Article[] = [
         diagramId: 'circadian-sleep'
       },
       {
-        id: 'the-hpa-axis-and-progesterone-steal',
-        heading: '2. The HPA Axis: How Cortisol Suppresses Progesterone',
-        subheading: 'Understanding why chronic stress manifests as irregular periods and PMS',
+        id: 'how-does-cortisol-affect-progesterone',
+        heading: '2. How Does Chronic High Cortisol Suppress Female Progesterone?',
+        subheading: 'AEO Question: Why does chronic stress cause missed periods and severe PMS?',
         content: [
-          'When psychological pressure, financial worry, or sleep deprivation triggers the amygdala, the hypothalamus releases corticotropin-releasing hormone (CRH), initiating the Hypothalamic-Pituitary-Adrenal (HPA) axis to pump cortisol and adrenaline into the bloodstream.',
-          'From an evolutionary survival standpoint, high cortisol signals acute environmental crisis: famine, predator threat, or conflict. In response, the body down-regulates non-essential functions—specifically reproduction. High cortisol suppresses GnRH pulses from the hypothalamus, leading to delayed or absent ovulation.',
-          'Furthermore, in states of chronic stress, the steroidogenic pathway favors cortisol production over progesterone synthesis—a physiological shift commonly referred to as "pregnenolone diversion." Without sufficient progesterone to balance estrogen in the luteal phase, women experience intense premenstrual syndrome (PMS), severe breast tenderness, mood volatility, and cystic jawline breakouts as described in our acne and pigmentation guide.'
+          '**Direct Answer:** Under chronic stress, the hypothalamic-pituitary-adrenal (HPA) axis prioritizes cortisol production over reproductive steroidogenesis (often called pregnenolone diversion). High cortisol directly inhibits hypothalamic GnRH pulsatility and pituitary LH release, delaying or suppressing ovulation. Without ovulation, no corpus luteum forms to manufacture progesterone, leaving estrogen unopposed and causing severe PMS, breast tenderness, and menstrual irregularities.',
+          'From an evolutionary survival standpoint, high cortisol signals an acute environmental crisis: famine, predator threat, or conflict. In response, the body down-regulates non-essential functions—specifically reproduction.',
+          'Without sufficient progesterone to balance estrogen in the luteal phase, women experience mood volatility and cystic jawline breakouts as described in our acne and pigmentation guide.'
         ],
         callout: {
           title: 'Hormonal Principle',
@@ -981,12 +1008,12 @@ export const ARTICLES: Article[] = [
         }
       },
       {
-        id: 'circadian-biology-and-blue-light',
-        heading: '3. Circadian Light Hygiene: Blue Wavelengths vs Melatonin',
-        subheading: 'Why bright overhead LEDs and phone screens silence the pineal gland',
+        id: 'how-does-blue-light-block-melatonin',
+        heading: '3. How Does Smartphone Blue Light Inhibit Nighttime Melatonin?',
+        subheading: 'AEO Question: Why does looking at screens before bed ruin sleep architecture?',
         content: [
-          'In human eyes, intrinsically photosensitive retinal ganglion cells (ipRGCs) contain the photopigment melanopsin, which is tuned specifically to short-wave blue light (460–480 nm)—the exact wavelength of clear blue daylight and smartphone screens.',
-          'When melanopsin detects blue photons after dusk, it sends inhibitory signals to the suprachiasmatic nucleus (SCN) in the brain, completely shutting down melatonin synthesis in the pineal gland. Melatonin is not simply a "sleep hormone"; it is one of the most potent intracellular antioxidants in human biology, protecting ovarian oocytes from oxidative stress.',
+          '**Direct Answer:** Intrinsically photosensitive retinal ganglion cells (ipRGCs) in the human eye contain melanopsin, a photopigment uniquely sensitive to blue light wavelengths (460–480 nm). When exposed to screen light after dark, melanopsin signals the suprachiasmatic nucleus (SCN) that it is midday, which suppresses pineal melatonin secretion by up to 50% and delays deep restorative slow-wave sleep by 60 to 90 minutes.',
+          'Melatonin is not simply a "sleep hormone"; it is one of the most potent intracellular antioxidants in human biology, protecting ovarian oocytes from oxidative stress.',
           'To preserve melatonin, switch off cool white fluorescent tube lights after 8:30 PM. Use warm floor lamps (below eye level) or amber candles, and apply blue-light blocking filters on all personal devices.'
         ]
       },
@@ -1038,10 +1065,14 @@ export const ARTICLES: Article[] = [
   {
     slug: '30-day-womens-wellness-challenge',
     title: "The 30-Day Women's Wellness Challenge: A Science-Backed Blueprint for Lasting Vitality",
+    seoTitle: "30-Day Women's Wellness Challenge | JADORESHREY",
+    metaDescription: "Join the evidence-based 30-day women's wellness challenge. Build daily micro-habits across skin barrier care, 20g protein, iron timing, lifting, and deep sleep.",
+    mainKeyword: "30 day women's wellness challenge",
+    relatedKeywords: ["daily healthy habits Indian women", "sustainable wellness routine"],
     subtitle: "A step-by-step 4-week structured curriculum connecting skincare, vegetarian protein, hormonal rhythms, strength training, and restorative sleep.",
     category: 'daily-wellness',
     categoryName: 'Daily Wellness',
-    heroImage: '/src/assets/images/jshrey_challenge_hero_1792565437302.jpg',
+    heroImage: '/images/30-day-womens-wellness-challenge.jpg',
     heroImageAlt: 'Editorial illustration of a 30-day women wellness challenge journal tracker, tea cup, pressed botanicals and serene desk setup',
     heroCaption: 'Transformative wellness is not a radical 3-day punishment; it is the compounding magic of 30 days of small, scientifically grounded micro-habits.',
     author: {
@@ -1057,28 +1088,38 @@ export const ARTICLES: Article[] = [
     medicalReviewedBy: 'Dr. Radhika Sen, MD & Dr. Meera Nambiar, MD, DGO',
     featured: true,
     toc: [
-      { id: 'why-most-challenges-fail', title: '1. Why Crash Challenges Fail: The Science of Habit Architecture' },
-      { id: 'week-1-circadian-foundations', title: '2. Week 1: Circadian Foundations, Hydration & Barrier Care' },
-      { id: 'week-2-protein-and-iron-synergy', title: '3. Week 2: Protein Density, Iron Synergy & Gut Harmony' },
-      { id: 'week-3-strength-and-bone-density', title: '4. Week 3: Muscle Architecture, Bone Density & Posture' },
-      { id: 'week-4-hormonal-mastery-and-restoration', title: '5. Week 4: Deep Hormonal Mastery, Stress & Longevity' },
-      { id: 'the-interactive-30-day-tracker', title: '6. Your Interactive 30-Day Roadmap' },
-      { id: 'how-to-sustain-results-beyond-day-30', title: '7. Sustaining Lifelong Vitality Beyond Day 30' }
+      { id: 'why-do-most-wellness-challenges-fail', title: '1. Why Do Most Restrictive Wellness Challenges Fail within 10 Days?' },
+      { id: 'how-is-the-30-day-challenge-structured', title: '2. How Is the 30-Day Women’s Wellness Challenge Structured?' },
+      { id: 'week-1-circadian-foundations', title: '3. Week 1: Circadian Foundations, Hydration & Barrier Care' },
+      { id: 'week-2-protein-and-iron-synergy', title: '4. Week 2: Protein Density, Iron Synergy & Gut Harmony' },
+      { id: 'week-3-strength-and-bone-density', title: '5. Week 3: Muscle Architecture, Bone Density & Posture' },
+      { id: 'week-4-hormonal-mastery-and-restoration', title: '6. Week 4: Deep Hormonal Mastery, Stress & Longevity' },
+      { id: 'the-interactive-30-day-tracker', title: '7. Your Interactive 30-Day Roadmap' },
+      { id: 'how-to-sustain-results-beyond-day-30', title: '8. Sustaining Lifelong Vitality Beyond Day 30' }
     ],
     sections: [
       {
-        id: 'why-most-challenges-fail',
-        heading: '1. Why Crash Challenges Fail: The Science of Habit Architecture',
-        subheading: 'Moving from willpower depletion to environmental design and micro-habits',
+        id: 'why-do-most-wellness-challenges-fail',
+        heading: '1. Why Do Most Restrictive Wellness Challenges Fail within 10 Days?',
+        subheading: 'AEO Question: Why do crash wellness challenges cause rebound fatigue and burnout?',
         content: [
+          '**Direct Answer:** Radical, restrictive wellness challenges fail because drastic calorie cuts, extreme cardio, and complex 12-step regimes trigger the amygdala’s survival threat response, dramatically elevating systemic cortisol and exhausting prefrontal willpower. Sustainable metabolic and dermatological transformation requires neuroplastic micro-habits: small, low-friction biological behaviors layered sequentially until automated by the basal ganglia.',
           'Every January and before festive wedding seasons, millions of Indian women embark on grueling 7-day cabbage soup diets, intense twice-a-day cardio classes, and complicated 12-step skincare regimens. By day 10, willpower is exhausted, cortisol surges, and old coping habits return with rebound guilt.',
-          'Behavioral neuroscience shows that radical, restrictive changes trigger the amygdala’s threat response. Sustainable physiological transformation occurs through neuroplastic micro-habits: small, low-friction behaviors repeated in a stable environmental context until they become automated by the basal ganglia.',
           'The JADORESHREY 30-Day Wellness Challenge is engineered specifically around this science. It does not demand that you abandon your favorite Indian comfort foods or spend two hours in a gym. Instead, it systematically layers one evidence-backed micro-habit each day across four core pillars: skin barrier respect, metabolic protein fueling, functional movement, and circadian endocrine rest.'
         ]
       },
       {
+        id: 'how-is-the-30-day-challenge-structured',
+        heading: '2. How Is the 30-Day Women’s Wellness Challenge Structured?',
+        subheading: 'AEO Question: What are the four core phases of the 30-day wellness challenge?',
+        content: [
+          '**Direct Answer:** The 30-day challenge is structured into four progressive weekly phases: Week 1 builds Circadian Foundations and skin barrier preservation; Week 2 establishes 20g Protein Anchors, gut diversity, and iron absorption pairing; Week 3 introduces Progressive Musculoskeletal Strength and posture mechanics; and Week 4 integrates Neuroendocrine Restoration, digital sunset routines, and hormonal longevity.',
+          'Each day introduces exactly one actionable micro-habit taking under 15 minutes to implement, ensuring high compliance without domestic or workplace friction.'
+        ]
+      },
+      {
         id: 'week-1-circadian-foundations',
-        heading: '2. Week 1: Circadian Foundations, Hydration & Barrier Care',
+        heading: '3. Week 1: Circadian Foundations, Hydration & Barrier Care',
         subheading: 'Days 1 to 7: Resetting your biological clock and skin mantle',
         content: [
           'The first week focuses on biological alignment. You will synchronize your suprachiasmatic nucleus with solar dawn, switch away from skin-stripping foaming washes, and stabilize baseline hydration:',
@@ -1090,7 +1131,7 @@ export const ARTICLES: Article[] = [
       },
       {
         id: 'week-2-protein-and-iron-synergy',
-        heading: '3. Week 2: Protein Density, Iron Synergy & Gut Harmony',
+        heading: '4. Week 2: Protein Density, Iron Synergy & Gut Harmony',
         subheading: 'Days 8 to 14: Nourishing cellular metabolism and reversing latent anemia',
         content: [
           'Week 2 targets the invisible deficiencies that rob Indian women of energy. You will master food combinations to optimize iron bioavailability and support gut microbiome diversity:',
@@ -1102,7 +1143,7 @@ export const ARTICLES: Article[] = [
       },
       {
         id: 'week-3-strength-and-bone-density',
-        heading: '4. Week 3: Muscle Architecture, Bone Density & Posture',
+        heading: '5. Week 3: Muscle Architecture, Bone Density & Posture',
         subheading: 'Days 15 to 21: Overcoming gym intimidation and building functional strength',
         content: [
           'Week 3 is dedicated to physical empowerment. You will discover the joy of progressive resistance training and deep core stability:',
@@ -1114,7 +1155,7 @@ export const ARTICLES: Article[] = [
       },
       {
         id: 'week-4-hormonal-mastery-and-restoration',
-        heading: '5. Week 4: Deep Hormonal Mastery, Stress & Longevity',
+        heading: '6. Week 4: Deep Hormonal Mastery, Stress & Longevity',
         subheading: 'Days 22 to 30: Integrating inner restoration and lasting self-care',
         content: [
           'The final week cements your habits into an integrated lifestyle that honors your hormonal biology:',
@@ -1126,7 +1167,7 @@ export const ARTICLES: Article[] = [
       },
       {
         id: 'the-interactive-30-day-tracker',
-        heading: '6. Your Interactive 30-Day Roadmap',
+        heading: '7. Your Interactive 30-Day Roadmap',
         subheading: 'Track every single day of the challenge with our digital companion tool',
         content: [
           'Use the interactive tool below to track your daily progress, review instructions for each micro-habit, and directly jump to the corresponding in-depth clinical guide on JADORESHREY WELLNESS.'
@@ -1135,7 +1176,7 @@ export const ARTICLES: Article[] = [
       },
       {
         id: 'how-to-sustain-results-beyond-day-30',
-        heading: '7. Sustaining Lifelong Vitality Beyond Day 30',
+        heading: '8. Sustaining Lifelong Vitality Beyond Day 30',
         subheading: 'The 80/20 rule of sustainable, joyful Indian female wellness',
         content: [
           'Completing 30 days is not an ending; it is the establishment of your personal physiological baseline. Moving forward, practice the 80/20 principle: follow your core wellness non-negotiables 80% of the time, while enjoying family gatherings, festive sweets, and social celebrations guilt-free for the remaining 20%.',

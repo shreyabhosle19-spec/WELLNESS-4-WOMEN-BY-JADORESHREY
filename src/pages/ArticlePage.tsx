@@ -83,13 +83,19 @@ export const ArticlePage: React.FC<Props> = ({ article, onNavigate }) => {
 
     // Check if paragraph contains any of these phrases
     // If found, highlight and link smoothly
+    let contentNode: React.ReactNode = text;
+
+    // Check for AEO Direct Answer prefix
+    const isDirectAnswer = text.startsWith('**Direct Answer:**');
+    const displayHtml = text;
+
     for (const [phrase, target] of Object.entries(linkMap)) {
       if (text.toLowerCase().includes(phrase.toLowerCase()) && !text.includes('href=')) {
         const regex = new RegExp(`(${phrase})`, 'gi');
         const parts = text.split(regex);
         if (parts.length > 1) {
           return (
-            <p key={pIdx} className="text-[#38332E] leading-relaxed text-base sm:text-[17px] font-sans my-4">
+            <p key={pIdx} className={`text-[#38332E] leading-relaxed text-base sm:text-[17px] font-sans my-4 ${isDirectAnswer ? 'p-4 bg-[#FAF7F2] rounded-xl border border-[#E8E1D5]' : ''}`}>
               {parts.map((part, i) => {
                 if (part.toLowerCase() === phrase.toLowerCase()) {
                   return (
@@ -100,10 +106,19 @@ export const ArticlePage: React.FC<Props> = ({ article, onNavigate }) => {
                         onNavigate(target.route);
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
-                      className="text-[#8C533C] underline underline-offset-4 decoration-[#D6CAB8] hover:decoration-[#8C533C] font-medium transition-colors cursor-pointer inline text-left"
+                      className="text-[#8C533C] underline underline-offset-4 decoration-[#D6CAB8] hover:decoration-[#8C533C] font-semibold transition-colors cursor-pointer inline text-left"
                     >
                       {part}
                     </button>
+                  );
+                }
+                if (part.includes('**Direct Answer:**')) {
+                  const subParts = part.split('**Direct Answer:**');
+                  return (
+                    <React.Fragment key={i}>
+                      <strong className="text-[#5A3825] font-serif text-base block mb-1">Direct Answer:</strong>
+                      {subParts[1]}
+                    </React.Fragment>
                   );
                 }
                 return part;
@@ -112,6 +127,16 @@ export const ArticlePage: React.FC<Props> = ({ article, onNavigate }) => {
           );
         }
       }
+    }
+
+    if (isDirectAnswer) {
+      const cleanText = text.replace('**Direct Answer:**', '').trim();
+      return (
+        <div key={pIdx} className="p-4 sm:p-5 bg-[#FAF7F2] rounded-xl border border-[#E8E1D5] my-5 text-[#38332E] leading-relaxed">
+          <strong className="text-[#5A3825] font-serif text-base block mb-1">Direct Answer:</strong>
+          <p className="text-base sm:text-[17px] font-sans">{cleanText}</p>
+        </div>
+      );
     }
 
     return (
@@ -160,6 +185,19 @@ export const ArticlePage: React.FC<Props> = ({ article, onNavigate }) => {
           {article.subtitle}
         </p>
 
+        {/* SEO & AEO Keyword Focus Indicator */}
+        <div className="py-2.5 px-4 bg-[#FAF6EF] rounded-lg border border-[#E8E1D5] text-xs text-[#554E48] flex flex-wrap items-center gap-x-3 gap-y-1">
+          <div>
+            <span className="font-semibold text-[#8C533C] uppercase tracking-wider text-[11px]">Primary Focus:</span>{' '}
+            <span className="font-medium text-[#2C2926]">{article.mainKeyword}</span>
+          </div>
+          <span className="text-[#C4B9AA]" aria-hidden="true">·</span>
+          <div>
+            <span className="font-semibold text-[#586F60] uppercase tracking-wider text-[11px]">Related Topics:</span>{' '}
+            <span className="text-[#6A6560]">{article.relatedKeywords.join(', ')}</span>
+          </div>
+        </div>
+
         {/* Byline & Actions bar */}
         <div className="pt-4 pb-4 border-y border-[#E8E1D5] flex items-center justify-between flex-wrap gap-4 text-xs text-[#6A6560]">
           <div className="flex items-center gap-3">
@@ -202,6 +240,8 @@ export const ArticlePage: React.FC<Props> = ({ article, onNavigate }) => {
           src={article.heroImage}
           alt={article.heroImageAlt}
           referrerPolicy="no-referrer"
+          loading="eager"
+          decoding="async"
           className="w-full h-auto object-cover max-h-[520px]"
         />
         {article.heroCaption && (

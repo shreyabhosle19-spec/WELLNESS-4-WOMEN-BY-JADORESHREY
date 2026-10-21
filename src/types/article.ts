@@ -51,6 +51,10 @@ export interface ArticleSection {
 export interface Article {
   slug: string;
   title: string;
+  seoTitle: string;
+  metaDescription: string;
+  mainKeyword: string;
+  relatedKeywords: [string, string];
   subtitle: string;
   category: CategorySlug;
   categoryName: string;
