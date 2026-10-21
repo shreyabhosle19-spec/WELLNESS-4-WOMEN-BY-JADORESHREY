@@ -38,13 +38,43 @@ export const HomePage: React.FC<Props> = ({ onNavigate, onOpenCalculator }) => {
           <span>Vol. I</span>
         </div>
 
-        <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#2C2926] leading-[1.15] text-balance">
+        <h1
+          onClick={() => {
+            onNavigate(`/article/${leadArticle.slug}`);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="font-serif text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#2C2926] hover:text-[#8C533C] leading-[1.15] text-balance cursor-pointer transition-colors"
+          title="Click to read the featured lead guide"
+        >
           Evidence-Informed Wellness for the Modern Indian Woman
         </h1>
 
         <p className="mt-5 text-base sm:text-lg text-[#6A6560] leading-relaxed max-w-2xl mx-auto font-sans font-light">
           Bridging clinical dermatology, ICMR nutrition standards, traditional Ayurvedic phytomedicine, and musculoskeletal science — without pseudoscientific trends or Western defaults.
         </p>
+
+        {/* Direct Action Buttons for Hero */}
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <button
+            onClick={() => {
+              onNavigate(`/article/${leadArticle.slug}`);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="px-5 py-2.5 bg-[#5A3825] hover:bg-[#462B1C] text-white text-xs font-semibold rounded-lg transition-colors flex items-center gap-2 cursor-pointer shadow-xs"
+          >
+            <span>Read Featured Guide: {leadArticle.title.split(':')[0]}</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
+          <button
+            onClick={() => {
+              onNavigate('/articles');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="px-4 py-2.5 bg-white border border-[#E8E1D5] hover:border-[#8C533C] text-[#5A3825] text-xs font-semibold rounded-lg transition-colors cursor-pointer"
+          >
+            Browse All 10 Guides
+          </button>
+        </div>
 
         {/* Quick Topics Ribbon */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-[#7A6858]">

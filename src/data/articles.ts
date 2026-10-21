@@ -1201,6 +1201,12 @@ export const ARTICLES: Article[] = [
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
+  if (
+    slug === 'evidence-informed-wellness-modern-indian-woman' ||
+    slug === 'evidence-informed-wellness-for-the-modern-indian-woman'
+  ) {
+    return ARTICLES[0];
+  }
   return ARTICLES.find(a => a.slug === slug);
 }
 
